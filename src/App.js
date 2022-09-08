@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import DarkModeBtn from "./components/DarkModeBtn";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App dark:bg-black transition duration-1000">
+      <DarkModeBtn />
+        <div className="flex items-center min-h-screen justify-center">
+            <h1 className="text-blue-600 dark:text-white font-bold text-7xl">React + Tailwind Boilerplate</h1>
+        </div>
     </div>
   );
 }
