@@ -4,7 +4,7 @@ import useDarkMode from './useDarkMode';
 const DarkModeBtn = () => {
     const [colorTheme, setTheme] = useDarkMode();
   return (
-    <div className='fixed top-0 bg-blue-100 w-full p-5'>
+    <div className=''>
         <span className='w-10 h-10 bg-indigo-500 rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center' onClick={() => setTheme(colorTheme)}>
         
         {colorTheme === 'light' ? (
